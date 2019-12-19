@@ -1,0 +1,200 @@
+@charset 'UTF-8';
+@import 'mixins';
+
+.sensor {
+	overflow: hidden;
+	opacity: 0;
+
+	& > p {
+		@include r(1680) {
+			font-size: 12px !important;
+		}
+	}
+
+	.build {
+		opacity: 1;
+	}
+	
+	.central {
+		opacity: 1;
+		top: 54.7%;
+		left: 35.5%;
+	}
+
+	.control {
+		left: 65%;
+	}
+
+	.servers {
+		@include r(1500) {
+			left: 38%;
+		}
+
+		@include r(1365) {
+			left: 39%;
+		}
+
+		left: 37%;
+	}
+
+	.workplace {
+		@include r(1500) {
+			left: 18%;
+		}
+
+		top: 60%;
+    	left: 17%;
+	}
+
+	.sensorcable {
+		@include r(1500) {
+			left: 14%;
+		}
+
+		top: 80%;
+		left: 16%;
+	}
+
+	.dts {
+		@include r(1500) {
+			top: 28%;
+		}
+
+		top: 26%;
+    	left: 53.5%;
+	}
+
+	.magistral {
+		@include r(1500) {
+    		left: 58%;
+		}
+
+		top: 60%;
+    	left: 59%;
+	}
+
+	#width1,
+	#width2 {
+		transform: translate(79px,-58px);
+	}
+
+	#circles {transform-origin: 73% 83%;}
+	
+	.km {
+		@include r(1500) {
+			top: 55.1%;
+		}
+
+		top: 56.1%;
+		left: 71%;
+	}
+
+	.st17 {
+		fill:none;
+		stroke:#2C2C56;
+		stroke-width:0.25;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke-miterlimit:22.9256;
+	}
+
+	#d1 {
+		display: none !important;
+	}
+}
+
+.wrap {
+	@include r(1500) {
+		padding: 28px 40px;
+	}
+
+	@include r(1365) {
+		padding: 18px 35px;
+	}
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgba(255,255,255, 0.9);
+	padding: 28px 54px;
+
+	span {
+		@include r(1365) {
+			font-size: 12px;
+		}
+	}
+
+	&__title {
+		@include r(1365) {
+			font-size: 15px !important;
+		}
+
+		color: #662883;
+		font-weight: 900;
+		line-height: 1.2;
+		font-size: 17px !important;
+		margin-bottom: 30px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 22px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		svg {
+			@include r(1365) {
+				width: 35px;
+			}
+			
+			margin-right: 10px;
+			width: 45px;
+		}
+	}
+}
+
+.oil {
+	position: relative;
+	opacity: 0;
+	overflow: hidden;
+	
+	& > p {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		line-height: 1.2;
+	}
+
+	.central {
+		left: 31%;
+		top: 35%;
+		opacity: 0;
+	}
+
+	.cable {
+		left: 34%;
+   		top: 56%;
+		font-size: 12px;
+		opacity: 0;
+	}
+
+	.sensors {
+		@include r(1399) {
+			top: 77%;
+		}
+		
+		left: 35%;
+		top: 78%;
+		font-size: 12px;
+		opacity: 0;
+	}
+
+	.control {
+		left: 10%;
+		top: 76%;
+		font-size: 12px;
+		opacity: 0;
+	}
+}
